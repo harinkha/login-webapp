@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="" />
+    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="First commit after login(connected with database">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/Webapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/Webapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/DatabaseConnectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/DatabaseConnectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +56,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="Application.UserService">
+  <component name="RunManager" selected="Application.Webapp">
     <configuration name="DatabaseConnectionService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.muic.ooc.webapp.service.DatabaseConnectionService" />
       <module name="Login WebApp" />
@@ -73,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Webapp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.muic.ooc.webapp.Webapp" />
+      <module name="Login WebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.muic.ooc.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -86,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Webapp" />
         <item itemvalue="Application.UserService" />
         <item itemvalue="Application.DatabaseConnectionService" />
       </list>
@@ -103,11 +127,34 @@
       <workItem from="1625856316692" duration="442000" />
       <workItem from="1625856819007" duration="935000" />
       <workItem from="1626110090592" duration="200000" />
-      <workItem from="1626110325424" duration="14306000" />
+      <workItem from="1626110325424" duration="23103000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit after login(connected with database">
+      <created>1626186499881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626186499882</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit after login(connected with database" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit after login(connected with database" />
   </component>
 </project>

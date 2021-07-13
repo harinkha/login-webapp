@@ -7,6 +7,8 @@ package io.muic.ooc.webapp.servlet;
 
 import io.muic.ooc.webapp.Routable;
 import io.muic.ooc.webapp.service.SecurityService;
+import io.muic.ooc.webapp.service.UserService;
+
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,6 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeServlet extends HttpServlet implements Routable {
 
     private SecurityService securityService;
+
 
     @Override
     public String getMapping() {
@@ -39,6 +42,9 @@ public class HomeServlet extends HttpServlet implements Routable {
             // do MVC in here
             String username = (String) request.getSession().getAttribute("username");
             request.setAttribute("username", username);
+
+            UserService userService=UserService.getInstance();
+            request.setAttribute("users", userService.findALl());
             RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/home.jsp");
             rd.include(request, response);
         } else {

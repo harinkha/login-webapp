@@ -4,26 +4,30 @@ package io.muic.ooc.webapp.service;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
+
+import io.muic.ooc.webapp.model.User;
 import org.apache.commons.lang.StringUtils;
+import org.mindrot.jbcrypt.BCrypt;
 
 
 public class SecurityService {
+    private UserService userService;
 
-    private Map<String, String> userCredentials = new HashMap<String, String>() {{
-        put("admin", "123456");
-        put("muic", "1111");
-    }};
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
     public boolean isAuthorized(HttpServletRequest request) {
         String username = (String) request.getSession()
                 .getAttribute("username");
         // do checking
-        return (username != null && userCredentials.containsKey(username));
+        userService.findByUsername(username);
+        return (username != null && userService.findByUsername(username) != null);
     }
 
     public boolean authenticate(String username, String password, HttpServletRequest request) {
-        String passwordInDB = userCredentials.get(username);
-        boolean isMatched = StringUtils.equals(password, passwordInDB);
-        if (isMatched) {
+        User user =userService.findByUsername(username);
+        if (user != null && BCrypt.checkpw(password,user.getPassword())) {
             request.getSession().setAttribute("username", username);
             return true;
         } else {

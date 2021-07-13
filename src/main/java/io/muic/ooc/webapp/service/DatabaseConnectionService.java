@@ -10,8 +10,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnectionService {
     private final HikariDataSource ds;
+    private  static DatabaseConnectionService service;
 
-    public DatabaseConnectionService() {
+    private DatabaseConnectionService() {
         ds = new HikariDataSource();
         ds.setMaximumPoolSize(20);
         ConfigProperties configProperties = ConfigurationLoader.load();
@@ -29,7 +30,13 @@ public class DatabaseConnectionService {
                 return ds.getConnection();
             }
 
+    public static DatabaseConnectionService getInstance(){
+        if(service==null){
+            service=new DatabaseConnectionService();
 
+        }
+        return service;
+    }
 
 
 
