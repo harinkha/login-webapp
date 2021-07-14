@@ -5,48 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="added log out">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jsp_jstl_jakarta_servlet_jsp_jstl_api_1_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_37.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_scan_8_5_37.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jakarta_servlet_jsp_jstl_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/Routable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/Webapp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/config/ConfigProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/config/ConfigurationLoader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/DatabaseConnectionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/SecurityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UsernameNotUniqueException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/HomeServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/LoginServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/home_jsp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/home_jsp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/login_jsp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/login_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Login WebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Login WebApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_api_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_el_api_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jsp_api_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jasper_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_el_api_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jasper_el_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jasper_el_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jsp_api_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jasper_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_8_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_api_8_5_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_scan_8_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jsp_jstl_jakarta_servlet_jsp_jstl_api_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jakarta_servlet_jsp_jstl_1_2_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/Webapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/Webapp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +137,7 @@
       <workItem from="1625856316692" duration="442000" />
       <workItem from="1625856819007" duration="935000" />
       <workItem from="1626110090592" duration="200000" />
-      <workItem from="1626110325424" duration="29455000" />
+      <workItem from="1626110325424" duration="35181000" />
     </task>
     <task id="LOCAL-00001" summary="First commit after login(connected with database">
       <created>1626186499881</created>
@@ -185,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626199325129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added log out">
+      <created>1626278006085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626278006085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
