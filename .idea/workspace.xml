@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="added delete user">
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" afterDir="false" />
+    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="prevented form deleting own account by server request">
+      <change afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/ChangePasswordServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/CreateUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +55,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/Webapp/WEB-INF" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/Webapp/WEB-INF" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.muic.ooc.webapp.servlet" />
     </key>
@@ -128,7 +140,7 @@
       <workItem from="1625856316692" duration="442000" />
       <workItem from="1625856819007" duration="935000" />
       <workItem from="1626110090592" duration="200000" />
-      <workItem from="1626110325424" duration="35810000" />
+      <workItem from="1626110325424" duration="40929000" />
     </task>
     <task id="LOCAL-00001" summary="First commit after login(connected with database">
       <created>1626186499881</created>
@@ -158,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626284624365</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="prevented form deleting own account by server request">
+      <created>1626285252739</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626285252739</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +212,8 @@
     <MESSAGE value="Updated UserService" />
     <MESSAGE value="added log out" />
     <MESSAGE value="added delete user" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete user" />
+    <MESSAGE value="prevented form deleting own account by server request" />
+    <option name="LAST_COMMIT_MESSAGE" value="prevented form deleting own account by server request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -202,6 +222,11 @@
           <properties class="java.lang.ClassNotFoundException" package="java.lang" />
           <option name="timeStamp" value="7" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

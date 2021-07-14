@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet implements Routable {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/login.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/login.jsp");
         rd.include(request, response);
     }
 
@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet implements Routable {
             } else {
                 String error = "Wrong username or password.";
                 request.setAttribute("error", error);
-                RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/login.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/login.jsp");
                 rd.include(request, response);
             }
         } else {

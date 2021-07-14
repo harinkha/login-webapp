@@ -47,12 +47,12 @@ public class HomeServlet extends HttpServlet implements Routable {
             request.setAttribute("currentUser",userService.findByUsername(username));
             request.setAttribute("users", userService.findALl());
 
-            RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/home.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/home.jsp");
             rd.include(request, response);
 
             //flash session removing attributes as they are used
-            request.removeAttribute("hasError");
-            request.removeAttribute("message");
+            request.getSession().removeAttribute("hasError");
+            request.getSession().removeAttribute("message");
         } else {
             request.removeAttribute("hasError");
             request.removeAttribute("message");
