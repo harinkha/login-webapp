@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="added log out">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Login WebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Login WebApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jsp_jstl_jakarta_servlet_jsp_jstl_api_1_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jakarta_servlet_jsp_jstl_1_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" afterDir="false" />
+    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="added delete user">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +128,7 @@
       <workItem from="1625856316692" duration="442000" />
       <workItem from="1625856819007" duration="935000" />
       <workItem from="1626110090592" duration="200000" />
-      <workItem from="1626110325424" duration="35181000" />
+      <workItem from="1626110325424" duration="35810000" />
     </task>
     <task id="LOCAL-00001" summary="First commit after login(connected with database">
       <created>1626186499881</created>
@@ -160,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626278006085</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added delete user">
+      <created>1626284624363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626284624365</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +192,8 @@
     <MESSAGE value="First commit after login(connected with database" />
     <MESSAGE value="Updated UserService" />
     <MESSAGE value="added log out" />
-    <option name="LAST_COMMIT_MESSAGE" value="added log out" />
+    <MESSAGE value="added delete user" />
+    <option name="LAST_COMMIT_MESSAGE" value="added delete user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
