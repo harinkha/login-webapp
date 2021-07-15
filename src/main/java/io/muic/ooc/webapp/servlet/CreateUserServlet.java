@@ -35,6 +35,8 @@ public class CreateUserServlet extends HttpServlet implements Routable {
             //String username = (String) request.getSession().getAttribute("username");
             //UserService userService=UserService.getInstance();
 
+            //request.setAttribute("username",username);
+
 
 
 
@@ -99,6 +101,12 @@ public class CreateUserServlet extends HttpServlet implements Routable {
                 }
             }
 
+
+
+            request.setAttribute("username",username);
+            request.setAttribute("displayName",displayName);
+            request.setAttribute("password",password);
+            request.setAttribute("cpassword",cpassword);
 
 
 

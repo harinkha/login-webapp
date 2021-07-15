@@ -13,6 +13,9 @@ public class UserService {
     private static final String SELECT_USER_SQL = "SELECT * FROM tbl_user WHERE username = ?;";
     private static final String SELECT_ALL_USERs_SQL = "SELECT * FROM tbl_user ;";
     private static final String DELETE_USER_SQL = "DELETE FROM tbl_user WHERE username = ?;";
+    private static final String UPDATE_USER_SQL = "UPDATE tbl_user SET display_name = ? WHERE username = ?;";
+    private static final String UPDATE_USER_PASSWORD_SQL = "UPDATE tbl_user SET password = ? WHERE username = ?;";
+
 
 
 
@@ -117,4 +120,38 @@ public class UserService {
         throw new UnsupportedOperationException("not yet implemented");
     }
 
+    public void updateByUsername(String username,String displayName)throws UserServiceException{
+        try (
+                Connection connection = databaseConnectionService.getConnection();
+                PreparedStatement ps = connection.prepareStatement(UPDATE_USER_SQL);
+        ){
+            ps.setString(1, displayName);
+            ps.setString(2, username);
+            ps.executeUpdate();
+
+            connection.commit();
+        }  catch (SQLException throwables) {
+            throw new UserServiceException(throwables.getMessage());
+        }
+    }
+
+    public void changePassword(String username,String newPassword)throws UserServiceException{
+        try (
+                Connection connection = databaseConnectionService.getConnection();
+                PreparedStatement ps = connection.prepareStatement(UPDATE_USER_PASSWORD_SQL);
+        ){
+            ps.setString(1, BCrypt.hashpw(newPassword, BCrypt.gensalt()));
+            ps.setString(2, username);
+            ps.executeUpdate();
+
+            connection.commit();
+        }  catch (SQLException throwables) {
+            throw new UserServiceException(throwables.getMessage());
+        }
+
+    }
+
+
 }
+
+
