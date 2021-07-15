@@ -29,7 +29,7 @@ public class DeleteUserServlet extends HttpServlet implements Routable {
 
     @Override
     public String getMapping() {
-        return "user/delete";
+        return "/user/delete";
     }
 
     @Override
@@ -46,7 +46,7 @@ public class DeleteUserServlet extends HttpServlet implements Routable {
 
             try {
                 User currentUser = userService.findByUsername(username);
-                User deletingUser = userService.findByUsername(request.getParameter(username));
+                User deletingUser = userService.findByUsername(request.getParameter("username"));
                 if (StringUtils.equals(currentUser.getUsername(), deletingUser.getUsername())) {
                     request.getSession().setAttribute("hasError", true);
                     request.getSession().setAttribute("message", "You cannot delete your own account!");

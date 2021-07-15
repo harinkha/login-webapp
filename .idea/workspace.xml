@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="prevented form deleting own account by server request">
-      <change afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/ChangePasswordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/CreateUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/UpdateUserServlet.java" afterDir="false" />
+    <list default="true" id="e7f19b11-ecfb-467e-a6bb-611327951dfe" name="Default Changelist" comment="added code to create a new user">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/EditUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/create_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/create_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/HomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/home_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/home_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/home_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/home_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/login_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/login_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/login_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8082/work/Tomcat/localhost/ROOT/org/apache/jsp/WEB_002dINF/login_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +147,7 @@
       <workItem from="1625856316692" duration="442000" />
       <workItem from="1625856819007" duration="935000" />
       <workItem from="1626110090592" duration="200000" />
-      <workItem from="1626110325424" duration="40929000" />
+      <workItem from="1626110325424" duration="44692000" />
     </task>
     <task id="LOCAL-00001" summary="First commit after login(connected with database">
       <created>1626186499881</created>
@@ -177,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626285252739</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added code to create a new user">
+      <created>1626293428936</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626293428937</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +227,8 @@
     <MESSAGE value="added log out" />
     <MESSAGE value="added delete user" />
     <MESSAGE value="prevented form deleting own account by server request" />
-    <option name="LAST_COMMIT_MESSAGE" value="prevented form deleting own account by server request" />
+    <MESSAGE value="added code to create a new user" />
+    <option name="LAST_COMMIT_MESSAGE" value="added code to create a new user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
